@@ -58,84 +58,51 @@ header .logo a {
 
 /* =================================== FOOTER ================================= */
 
-
-
-/* =================================== HERO ================================= */
-
-#hero {
-  background-image: url("../images/pexels-taryn-elliott-4840134.jpg");
-  background-size: cover;
-  height: 100vh;
-  background-repeat: no-repeat;
-  position: relative;
+footer {
+  padding: 50px;
+  color: #fff;
+  background-color: black;
+  line-height: 1.5;
 }
 
-.hero-section {
+footer a, footer p {
+  font-size: 0.8rem;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer h4 {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+
+}
+
+footer h4::after {
+  content: '';
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: width .3s ease;
 }
 
-.hero-section-heading h1 {
-  font-size: 3rem;
-  color: white;
-  font-weight: bold;
-}
-
-.hero-section-description p {
-  font-size: 1.2rem;
-  color: #fff;
-  margin-bottom: 20px;
-}
-
-/* =================================== INTRODUCTION ================================= */
-
-.home-introduction-content {
-  display: flex;
-  gap: 150px;
-  align-items: center;
-  justify-content: space-between;
-  padding: 30px 60px;
-}
-
-.home-introduction-content-info h1 {
-  margin-bottom: 30px;
-}
-
-.home-introduction-content-info p {
-  text-align: center;
-}
-
-.home-introduction-button {
-  margin-top: 30px;
-  text-align: center;
-}
-
-.home-introduction-content img {
+footer h4:hover::after {
   width: 100%;
-  border-radius: 10px;
 }
 
-/* =================================== HOME PARALLAX EFFECT ================================= */
+.footer-section {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
 
-#home-parallax-section {
-  position: relative;
-  height: 400px;
-  background-image: url(../images/pexels-rachel-claire-4577179.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: #fff;
+.copyright  {
   text-align: center;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-.parallax-content {
-  padding: 20px 30px;
-  border-radius: 10px;
+  padding-top: 30px;
 }

@@ -1,0 +1,99 @@
+/* =================================== HERO ================================= */
+
+#hero {
+    background-image: url("../images/pexels-taryn-elliott-4840134.jpg");
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  
+  .hero-section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .hero-section-heading h1 {
+    font-size: 3rem;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .hero-section-description p {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  /* =================================== INTRODUCTION ================================= */
+  
+  .home-introduction-content {
+    display: flex;
+    gap: 150px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 60px;
+  }
+  
+  .home-introduction-content-info h1 {
+    margin-bottom: 30px;
+  }
+  
+  .home-introduction-content-info p {
+    text-align: center;
+  }
+  
+  .home-introduction-button {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .home-introduction-content img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  /* =================================== HOME PARALLAX EFFECT ================================= */
+  
+  #home-parallax-section {
+    position: relative;
+    height: 500px;
+    background-image: url(../images/pexels-rachel-claire-4577179.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .parallax-content {
+    padding: 20px 30px;
+    border-radius: 10px;
+  }
+
+  .parallax-content h1 {
+    font-size: 3.7rem;
+    margin-top: 15%;
+  }
+
+  .parallax-content p {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+  }
+
+  .parallax-button a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .parallax-button a:hover {
+    
+    text-decoration: underline;
+  }
