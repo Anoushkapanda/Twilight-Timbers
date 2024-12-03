@@ -2,16 +2,23 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none !important;
 }
 
 .all-sections {
-  margin: 50px 70px;
+  margin: 80px 100px;
 }
 
 .main-headings {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  font-weight: 600;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .button {
@@ -54,6 +61,7 @@ header .logo a {
 .navbar ul li a {
   color: #fff;
   text-decoration: none;
+  font-size: 1rem;
 }
 
 /* =================================== FOOTER ================================= */
@@ -65,7 +73,7 @@ footer {
   line-height: 1.5;
 }
 
-footer a, footer p {
+footer a, footer p, li {
   font-size: 0.8rem;
 }
 
@@ -74,14 +82,13 @@ footer a {
   text-decoration: none;
 }
 
-footer h4 {
+footer h5 {
   position: relative;
   display: inline-block;
   text-decoration: none;
-
 }
 
-footer h4::after {
+footer h5::after {
   content: '';
   position: absolute;
   left: 0;
@@ -92,14 +99,44 @@ footer h4::after {
   transition: width .3s ease;
 }
 
-footer h4:hover::after {
+footer h5:hover::after {
   width: 100%;
 }
 
 .footer-section {
   display: flex;
-  gap: 20px;
+  gap: 120px;
+}
+
+.footer-logo h3 {
+  margin-bottom: 20px;
+}
+
+.footer-social-links i {
+  margin-right: 10px;
+}
+
+.quick-links ul {
+  padding: 0;
+  margin: 0;
+}
+
+.opening-hours-list {
+  padding: 0;
+  margin: 0;
+}
+
+.opening-hours-list li {
+  display: flex;
+  gap: 30px;
+  align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid #fff;
+  margin: 5px;
+}
+
+.special-note {
+  margin-top: 20px;
 }
 
 .copyright  {
