@@ -6,61 +6,61 @@
     height: 100vh;
     background-repeat: no-repeat;
     position: relative;
-  }
-  
-  .hero-section {
+}
+
+.hero-section {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-  }
-  
-  .hero-section-heading h1 {
+}
+
+.hero-section-heading h1 {
     font-size: 3rem;
     color: white;
     font-weight: bold;
-  }
-  
-  .hero-section-description p {
+}
+
+.hero-section-description p {
     font-size: 1.2rem;
     color: #fff;
     margin-bottom: 20px;
-  }
-  
-  /* =================================== INTRODUCTION ================================= */
-  
-  .home-introduction-content {
+}
+
+/* =================================== INTRODUCTION ================================= */
+
+.home-introduction-content {
     display: flex;
     gap: 150px;
     align-items: center;
     justify-content: space-between;
     padding: 30px 60px;
-  }
-  
-  .home-introduction-content-info h1 {
+}
+
+.home-introduction-content-info h1 {
     margin-bottom: 30px;
-  }
-  
-  .home-introduction-content-info p {
+}
+
+.home-introduction-content-info p {
     text-align: center;
-  }
-  
-  .home-introduction-button {
+}
+
+.home-introduction-button {
     margin-top: 30px;
     text-align: center;
-  }
-  
-  .home-introduction-content img {
+}
+
+.home-introduction-content img {
     width: 100%;
     border-radius: 10px;
-  }
-  
-  /* =================================== HOME PARALLAX EFFECT ================================= */
-  
-  #home-parallax-section {
+}
+
+/* =================================== HOME PARALLAX EFFECT ================================= */
+
+#home-parallax-section {
     position: relative;
-    height: 500px;
+    height: 600px;
     background-image: url(../images/pexels-rachel-claire-4577179.jpg);
     background-attachment: fixed;
     background-position: center;
@@ -71,29 +71,241 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-  }
-  
-  .parallax-content {
+}
+
+.parallax-content {
     padding: 20px 30px;
     border-radius: 10px;
-  }
+}
 
-  .parallax-content h1 {
+.parallax-content h1 {
     font-size: 3.7rem;
     margin-top: 15%;
-  }
+}
 
-  .parallax-content p {
+.parallax-content p {
     font-size: 1.3rem;
     margin-bottom: 20px;
-  }
+}
 
-  .parallax-button a {
+.parallax-button a {
     color: #fff;
     text-decoration: none;
-  }
+}
 
-  .parallax-button a:hover {
-    
+.parallax-button a:hover {
     text-decoration: underline;
-  }
+}
+
+/* =================================== HOME MENU SECTION ================================= */
+
+.home-menu-intro {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+}
+
+.home-menu-item-img img {
+    width: 100%;
+    /* height: auto; */
+    height: calc(100% * 9 / 16); /* For a 16:9 aspect ratio */
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+.home-menu-intro .home-menu-item:nth-child(1) {
+    grid-column: 1;
+    grid-row: span 2;
+}
+
+.home-menu-intro .home-menu-item:nth-child(2) {
+    grid-column: 2;
+    grid-row: span 2;
+}
+
+.home-menu-intro .home-menu-item:nth-child(3),
+.home-menu-intro .home-menu-item:nth-child(4) {
+    grid-column: 3;
+    grid-row: span 1;
+}
+
+.home-menu-intro .home-menu-item:nth-child(5) {
+    grid-column: span 2;
+}
+
+.home-menu-intro .home-menu-item:nth-child(6) {
+    grid-column: 3;
+}
+
+.home-menu-item {
+    position: relative;
+}
+
+.home-menu-item .home-menu-item-content {
+    position: absolute;
+    left: 40%;
+    top: 70%;
+}
+
+.home-menu-item .home-menu-item-content a {
+    font-size: 1.5rem;
+    background-color: rgb(255, 255, 255, 0.4);
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+/* =================================== HOME TESTIMONIAL SECTION ================================= */
+
+.testimonial-img img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.testimonial-item {
+    padding: 40px 150px;
+
+}
+
+.carousel-indicators button {
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50% !important;
+    margin: 0 2px !important;
+    opacity: 0.5 !important;
+    background-color: black !important;
+}
+
+.carousel-indicators button:active {
+    background-color: #000 !important;
+    transform: scale(1.5);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    color: black !important; /* Black color for the buttons */
+    font-weight: bold !important; /* Make the text bold */
+    background-color: black !important; /* Remove background */
+    border: none !important; /* Remove border */
+    padding: 0 !important; /* Remove padding */
+}
+
+/* =================================== HOME RESERVATION PARALLAX EFFECT ================================= */
+
+#reservation-parallax-section {
+    position: relative;
+    height: 300px;
+    background-image: url(../images/pexels-alexandra-kollstrem-77751824-8856503.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+/* =================================== HOME EVENTS SECTION ================================= */
+
+#home-events {
+    text-align: center;
+    margin: 0;
+    padding: 50px 100px;
+    background-color: black;
+    color: white;
+}
+
+.home-events-content {
+    margin-bottom: 20px;
+}
+
+.home-event-key-points-section {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* .home-event-key-points {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+} */
+
+.home-event-key-points i {
+    font-size: 2rem !important;
+}
+
+.home-upcoming-events {
+    margin-top: 30px;
+}
+
+.home-upcoming-events h2 {
+    margin-bottom: 20px;
+}
+
+.home-upcoming-events-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+    color: #000;
+    border-radius: 10px;
+    font-style: italic;
+}
+
+.home-upcoming-events-image img {
+    width: 100%;
+    border-top-left-radius : 10px;
+    border-bottom-left-radius : 10px;
+    padding-left: 0;
+    height: auto;
+}
+
+.home-upcoming-events-info {
+    padding-right: 20px;
+}
+
+.home-upcoming-events-info h2 {
+    font-size: 1.7rem;
+}
+
+.home-upcoming-events-timer {
+    font-size: 2.3rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.home-upcoming-events-timer .timer {
+    margin-right: 5px !important;
+}
+
+.home-events-button a {
+    margin-top: 50px;
+    color: #000;
+}
+
+/* =================================== HOME NEWSLETTER SECTION ================================= */
+
+#newsletter {
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 80px 100px;
+}
+
+.newsletter-form input {
+    width: 400px;
+    height: 40px;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+.newsletter-form button {
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    padding: 0 20px;
+}
