@@ -149,13 +149,20 @@
 }
 
 .home-menu-item .home-menu-item-content a {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 800;
     background-color: rgb(255, 255, 255, 0.4);
     color: black;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 7px 25px;
     border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
+
+.home-menu-item .home-menu-item-content:hover {
+    transform: translateY(-5px);
+    transition: .3s ease-in-out;
+} 
 
 /* =================================== HOME TESTIMONIAL SECTION ================================= */
 
@@ -186,16 +193,16 @@
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    color: black !important; /* Black color for the buttons */
-    font-weight: bold !important; /* Make the text bold */
-    background-color: black !important; /* Remove background */
-    border: none !important; /* Remove border */
-    padding: 0 !important; /* Remove padding */
+    color: black !important;
+    font-weight: bold !important;
+    background-color: black !important;
+    border: none !important;
+    padding: 10px !important; 
 }
 
 /* =================================== HOME RESERVATION PARALLAX EFFECT ================================= */
 
-#reservation-parallax-section {
+.reservation-parallax-section {
     position: relative;
     height: 300px;
     background-image: url(../images/pexels-alexandra-kollstrem-77751824-8856503.jpg);
@@ -209,6 +216,33 @@
     align-items: center;
     overflow: hidden;
 }
+
+.reservation {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 90%;
+    padding: 30px;
+    border-radius: 10px;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}
+
+.reservation form {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.reservation input {
+    padding: 7px 15px;
+    margin-right: 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+}
+   
+
 /* =================================== HOME EVENTS SECTION ================================= */
 
 #home-events {
@@ -308,4 +342,10 @@
     height: 40px;
     border-radius: 20px;
     padding: 0 20px;
+}
+
+.newsletter-form button:hover {
+    background-color: #000;
+    color: #f0f0f0;
+    /* box-shadow: rgb(255, 255, 255, 0.4); */
 }
