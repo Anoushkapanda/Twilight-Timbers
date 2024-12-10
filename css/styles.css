@@ -29,6 +29,13 @@ a {
   border-radius: 20px;
 }
 
+.button:hover {
+  background-color: #333;
+  box-shadow: 0 4px 6px rgba(111, 191, 115, 0.7);
+  transform: translateY(-2px);
+  transition: .5s ease;
+}
+
 /* =================================== HEADER ================================= */
 
 header {
@@ -67,10 +74,15 @@ header .logo a {
 /* =================================== FOOTER ================================= */
 
 footer {
-  padding: 50px;
   color: #fff;
-  background-color: black;
+  /* background-color: black; */
+  background-image: url(../images/pexels-iriser-1438994.jpg);
   line-height: 1.5;
+}
+
+.footer {
+  padding: 50px;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 footer a, footer p, li {
