@@ -2,30 +2,6 @@
 
 #hero {
     background-image: url("../images/pexels-taryn-elliott-4840134.jpg");
-    background-size: cover;
-    height: 100vh;
-    background-repeat: no-repeat;
-    position: relative;
-}
-
-.hero-section {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.hero-section-heading h1 {
-    font-size: 3rem;
-    color: white;
-    font-weight: bold;
-}
-
-.hero-section-description p {
-    font-size: 1.2rem;
-    color: #fff;
-    margin-bottom: 20px;
 }
 
 /* =================================== INTRODUCTION ================================= */
@@ -144,18 +120,19 @@
 
 .home-menu-item .home-menu-item-content {
     position: absolute;
-    left: 40%;
-    top: 70%;
+    left: 0;
+    top: 80%;
 }
 
 .home-menu-item .home-menu-item-content a {
     font-size: 1.2rem;
     font-weight: 800;
-    background-color: rgb(255, 255, 255, 0.4);
+    background-color: rgb(255, 255, 255, 0.3);
     color: black;
     text-decoration: none;
     padding: 7px 25px;
-    border-radius: 20px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
