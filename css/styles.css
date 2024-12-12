@@ -71,6 +71,36 @@ header .logo a {
   font-size: 1rem;
 }
 
+/* =================================== HERO ================================= */
+
+#hero {
+  /* background-image: url("../images/pexels-taryn-elliott-4840134.jpg"); */
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.hero-section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hero-section-heading h1 {
+  font-size: 3rem;
+  color: white;
+  font-weight: bold;
+}
+
+.hero-section-description p {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
 /* =================================== FOOTER ================================= */
 
 footer {
