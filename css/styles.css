@@ -21,6 +21,11 @@ a {
   margin-bottom: 20px;
 }
 
+.sub-headings {
+  font-style: italic;
+  text-align: center;
+}
+
 .button {
   text-decoration: none;
   color: #fff;

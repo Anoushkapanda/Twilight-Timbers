@@ -35,6 +35,35 @@
     border-radius: 10px;
 }
 
+/* =========================== MISSION AND VALUES ============================ */
+
+#misson-and-values {
+    background: url(../images/pexels-rachel-claire-4577179.jpg);
+    color: white;
+}
+
+.mission-and-values-section {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    padding: 80px 100px;
+}
+
+.mission-and-values-content-section {
+    display: flex;
+    gap: 40px;
+    align-items: stretch;
+    justify-content: space-around;
+}
+
+.mission-and-values-item {
+    width: 25%;
+    height: auto;
+    padding: 30px 15px;
+    text-align: center;
+    border: .5px dashed rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+}
+
 /* ================================ OUR TEAM ============================ */
 
 .our-team-section {
@@ -46,6 +75,7 @@
 }
 
 .team-member {
+    position: relative;
     width: 30%;
     margin-bottom: 40px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
@@ -53,6 +83,23 @@
 
 .team-member img {
     width: 100%;
+}
+
+.team-overlay {
+    position: absolute;
+    bottom: 0;
+    padding: 7px 15px;
+    height: 40px;
+    width: 100%;
+    background-color: rgba(38, 47, 38, 0.8);
+    color: white;
+    text-align: center;
+    opacity: 0;
+}
+
+.team-member:hover .team-overlay {
+    opacity: 1;
+    transition: .5s ease-in-out;
 }
 
 /* =================================== FAQ ================================= */
