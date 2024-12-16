@@ -102,6 +102,121 @@
     transition: .5s ease-in-out;
 }
 
+/* =================================== AMBIENCE ================================= */
+
+#ambiance {
+    text-align: center;
+    background: #f4f4f4 url('path_to_forest-pattern.png') repeat; /* Add the forest background pattern */
+    padding: 80px 100px;
+    margin: 0;
+}
+
+.ambiance-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 60px auto;
+}
+
+.ambiance-image img {
+    width: 100%;
+    height: auto;
+    /* transform: rotate(-5deg);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; */
+    border-radius: 10px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ambiance-image:hover img {
+    transform: rotate(0deg) scale(1.1);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* =============================== TESTIMONIALS ============================ */
+#testimonials {
+    position: relative;
+    width: 75%;
+    overflow: hidden;
+    text-align: center;
+    margin: 80px 160px;
+}
+
+.testimonial-carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    padding: 20px 0;
+}
+
+.testimonial-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.testimonial-img img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.testimonial-name {
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.ratings i {
+    color: #28a745;
+}
+
+.testimonial-text {
+    font-style: italic;
+    margin-top: 20px;
+    padding: 0 40px;
+}
+
+.quotes, .quotes-inverted {
+    font-size: 0.8rem;
+    color: #555;
+}
+
+.quotes-inverted {
+    transform: rotate(180deg);
+}
+
+.testimonial-button {
+    margin-top: 20px;
+}
+
+#prev-slide, #next-slide {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #fff;
+    background: #000;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#prev-slide {
+    margin-right: 20px;
+}
+
+#next-slide {
+    margin-left: 20px;
+}
+
+#prev-slide:hover, #next-slide:hover {
+    background: #444;
+}
+
+
 /* =================================== FAQ ================================= */
 
 .faq-button {
