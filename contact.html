@@ -36,7 +36,7 @@
 
     <!-- Link to External Stylesheets (if any) -->
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/contacts.css">
 
     <!-- fontawesome link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -121,19 +121,151 @@
 
         <!-- CONTACT FORM AND NEWSLETTER -->
 
-        <div class="contact-form-and-newsletter">
-            <div class="contact-form">
-                <form action="">
-                    <input type="text" placeholder="Name" class="contact-name" required>
-                    <input type="email" placeholder="Email" class="contact-email">
-                    <input type="tel" placeholder="Number" class="contact-number" required>
-                    <textarea id="message" name="message" rows="5" placeholder="Message" required></textarea>
-                </form>
+        <div id="contact-form-and-newsletter" class="all-sections">
+            <div class="contact-form-and-newsletter-section">
+                <div class="contact-form">
+                    <form action="">
+                        <div class="form-group name-and-email">
+                            <input type="email" placeholder="Email" class="contact-email">
+                            <input type="tel" placeholder="Number" class="contact-number" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Name" class="contact-name" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" placeholder="Message" required></textarea>
+                        </div>
+                        <button type="submit" class="">Send Message</button>
+                    </form>
+                </div>
+                <div class="newsletter">
+                    <h5>Subscribe to Our Newsletter</h5>
+                    <p>Stay updated with the latest news, events, and exclusive offers from Twilight Timbers. Discover
+                        delicious recipes, behind-the-scenes stories, and upcoming events delivered straight to your
+                        inbox.</p>
+                    <form action="">
+                        <div class="form-group">
+                            <input type="email" placeholder="Email">
+                        </div>
+                        <button type="submit">Join our Twilight Timbers family today!</button>
+                    </form>
+                </div>
             </div>
-            <div class="newsletter">
-                <h5>Subscribe to Our Newsletter</h5>
-                <p>Stay updated with the latest news, events, and exclusive offers from Twilight Timbers.</p>
+        </div>
 
+        <!-- CONTACT DETAILS -->
+
+        <div id="contact-details" class="all-sections">
+            <div class="contact-details-container">
+                <div class="contact-details-item">
+                    <div class="contact-details-item-inline">
+                        <i class="fa-solid fa-tty"></i>
+                        <a href="tel:+1234567890">
+                            <h6>+1 234 567 890</h6>
+                        </a>
+                    </div>
+                    <p>We’re just a call away for all your questions or reservations!</p>
+                </div>
+
+                <div class="contact-details-item">
+                    <div class="contact-details-item-inline">
+                        <i class="fa-solid fa-envelope-open-text"></i>
+                        <a href="mailto:info@twilighttimbers.com">
+                            <h6>info@twilighttimbers.com</h6>
+                        </a>
+                    </div>
+                    <p>Drop us a line and we'll get back to you faster than you can say 'forest feast'!</p>
+                </div>
+
+                <div class="contact-details-item">
+                    <div class="contact-details-item-inline">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <h6>Whispering Pines</h6>
+                    </div>
+                    <!-- <p>Forest Area <br> 123 Nature Road</p> -->
+                    <p>Find us where nature and flavor meet, under the enchanting pines!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONTACT MAP -->
+
+        <div id="contact-map" class="all-sections">
+            <h2>Find Us Here</h2>
+            <div class="map">
+                <!-- Embed Google Map here -->
+                <iframe src="https://www.google.com/maps/embed?pb=..." allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+
+        <!-- FAQs AND OPENING HOURS -->
+
+        <div id="faq-ans-opening-hours" class="all-sections">
+            <div class="faq-ans-opening-hours-container">
+                <div class="faq-section">
+                    <h2>Frequently Asked Questions</h2>
+                    <div class="faq">
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>Where are you located?</span>
+                                <i class="fa-solid fa-plus toggle-icon"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>At Whispering Pines, Forest Area – your perfect escape into nature.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>Do I need a reservation?</span>
+                                <i class="fa-solid fa-plus toggle-icon"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Not always, but it’s a smart move, especially on weekends.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>Is there parking available?</span>
+                                <i class="fa-solid fa-plus toggle-icon"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Of course! Plenty of room for your ride.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>Can I book a private event?</span>
+                                <i class="fa-solid fa-plus toggle-icon"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Absolutely! Let’s make your celebration unforgettable.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="opening-hours-section">
+                    <h2>Our Business Hours</h2>
+                    <div class="opening-hours">
+                        <div class="opening-hours-items">
+                            <p>Monday-Friday:</p>
+                            <p>10:00 AM - 10:00PM</p>
+                        </div>
+                        <div class="opening-hours-items">
+                            <p>Saturday:</p>
+                            <p>10:00 AM - 11:00PM</p>
+                        </div>
+                        <div class="opening-hours-items">
+                            <p>Sunday:</p>
+                            <p>10:00 AM - 12:00PM</p>
+                        </div>
+                        <div class="opening-hours-items different-timing">
+                            <p><em>For special events, just give us a shout or check our website for the latest updates!</em></p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -214,6 +346,9 @@
 
     <!-- main js file -->
     <script src="js/main.js" defer></script>
+
+    <!-- contact js file -->
+    <script src="js/contact.js" defer></script>
 
     <!-- Bootstrap js link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

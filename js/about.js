@@ -30,21 +30,24 @@ setInterval(showNextSlide, 10000);
 
 
 // Toggle FAQ button
-function toggleAnswer(button) {
-    const answer = button.nextElementSibling;
-    const arrow = button.querySelector('.arrow');
+document.querySelectorAll('.faq-question').forEach(question => {
+    question.addEventListener('click', () => {
+        const isActive = question.classList.contains('active');
 
-    // Check if the answer is already visible
-    if (answer.style.height && answer.style.height !== "0px") {
-        // If it is visible, collapse it
-        answer.style.height = "0px";
-        arrow.style.transform = "rotate(0deg)";
-    } else {
-        // If it isn't visible, expand it
-        answer.style.height = `${answer.scrollHeight}px`;  // Use scrollHeight for the full height of the content
-        arrow.style.transform = "rotate(180deg)";
-    }
-}
+        // Close all open answers
+        document.querySelectorAll('.faq-question').forEach(q => q.classList.remove('active'));
+        document.querySelectorAll('.faq-answer').forEach(a => {
+            a.style.maxHeight = null;
+        });
+
+        if (!isActive) {
+            // Open the clicked answer
+            question.classList.add('active');
+            const answer = question.nextElementSibling;
+            answer.style.maxHeight = answer.scrollHeight + "px";
+        }
+    });
+});
 
 // Search bar for FAQ
 function filterFAQs() {

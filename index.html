@@ -48,6 +48,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Google Fonts (optional, if using a custom font) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Fuzzy+Bubbles:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Qwitcher+Grypen:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
 
     <!-- Lightbox2 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/css/lightbox.min.css" rel="stylesheet">
@@ -71,9 +76,24 @@
 
 <body>
 
+    <!-- TOP INFO BAR -->
+    <div class="top-bar">
+        <div class="top-bar-left">
+            <span><i class="fa-solid fa-leaf quotes-inverted"></i> Seasonal Forest Specials Available</span>
+        </div>
+
+        <div class="top-bar-right">
+            <span>Open: 12 PM – 11 PM</span>
+            <span class="divider">|</span>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+        </div>
+    </div>
+
+    <!-- MAIN HEADER -->
     <header>
         <div class="logo">
-            <a href="index_home.html">Twilight Timbers</a>
+            <a href="index_home.html">Twilight <span>Timbers</span></a>
         </div>
         <div class="hamburger">
             <span></span>
@@ -110,10 +130,10 @@
         <section id="hero">
             <div class="hero-section">
                 <div class="hero-section-heading">
-                    <h1>Welcome to Twilight Timbers</h1>
+                    <h1>Dine Where the Forest Whispers</h1>
                 </div>
                 <div class="hero-section-description">
-                    <p>Where Nature Meets Flavor</p>
+                    <p>A nature-inspired dining experience rooted in seasonal flavors.</p>
                 </div>
                 <div class="hero-section-buttons">
                     <a href="menu.html" class="button">Explore Menu</a>
@@ -150,7 +170,7 @@
         <section id="home-parallax-section">
             <div class="parallax-content">
                 <h1>“Dine Amidst Nature’s Beauty”</h1>
-                <p class="sub-headings">Experience the enchanting fusion of nature and flavor at Twilight Timbers.</p>
+                <p class="parallax-tagline">Experience the enchanting fusion of nature and flavor at Twilight Timbers.</p>
                 <div class="parallax-button">
                     <a href="about_us.html">Learn More About Us<i class="fa fa-arrow-right"></i></a>
                 </div>
@@ -191,7 +211,7 @@
                     </div>
                 </div>
 
-                <div class="home-menu-item">
+                <!-- <div class="home-menu-item">
                     <div class="home-menu-item-img">
                         <img src="images/home-starters.jpg" alt="Starters">
                     </div>
@@ -207,7 +227,7 @@
                     <div class="home-menu-item-content">
                         <a href="menu.html">Happy Hours</a>
                     </div>
-                </div>
+                </div> -->
 
                 <div class="home-menu-item">
                     <div class="home-menu-item-img">
@@ -218,6 +238,9 @@
                     </div>
                 </div>
             </div>
+            <div class="menu-cta">
+                <a href="menu.html" class="button">View Full Menu</a>
+              </div>              
         </section>
 
         <!-- EVENTS HIGHLIGHT SECTION -->
@@ -225,7 +248,8 @@
         <section id="home-events" class="all-sections">
             <h1 class="main-headings">celebrate with us</h1>
             <div class="home-events-content">
-                <p class="sub-headings">From intimate dinners to grand celebrations, Twilight Timbers is the perfect setting for
+                <p class="sub-headings">From intimate dinners to grand celebrations, Twilight Timbers is the perfect
+                    setting for
                     unforgettable
                     memories.
                     Whether it's a romantic night, a birthday bash, or a corporate gathering, we’ll make it
@@ -266,10 +290,14 @@
                             <p>
                                 <strong>Time: </strong> 7:00 PM
                             </p>
-                            <div class="home-upcoming-events-timer">
+                            <!-- <div class="home-upcoming-events-timer">
                                 <span class="timer">00</span> <span></span> <span> Days</span> <span>00</span> :
                                 <span>00</span> : <span>00</span>
-                            </div>
+                            </div> -->
+                            <div class="home-upcoming-events-status">
+                                <span class="event-label">Next Curated Experience</span>
+                                <span class="event-timer"></span>
+                              </div>                              
                             <div class="home-events-button">
                                 <a href="events_and_booking.html" class="">
                                     Explore more Events <i class="fa fa-arrow-right"></i>
@@ -409,7 +437,7 @@
         </section>
 
         <!-- RESERVATION HIGHLIGHT SECTION -->
-        
+
         <section id="reservation-parallax-section" class="reservation-parallax-section">
             <div class="reservation">
                 <h1>"Reserve your table today"</h1>
@@ -418,7 +446,7 @@
                     <input type="text" placeholder="Your Name" required />
                     <input type="tel" placeholder="Your Number" required />
                     <input type="date" placeholder="Date" />
-                    <input type="time" placeholder="Time" >
+                    <input type="time" placeholder="Time">
                 </form>
                 <div>
                     <a href="about_us.html" class="button">Book Now</a>
@@ -466,10 +494,10 @@
                         <li><a href="gallery.html">Gallery</a></li>
                         <li><a href="events_and_booking.html">Events and Booking</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
-    
+
                     </ul>
                 </div>
-    
+
                 <div class="footer-contact-section">
                     <h5>Contact Us</h5>
                     <p>
@@ -482,7 +510,7 @@
                         <strong>Address: </strong> 123 Main St, Anytown, USA
                     </p>
                 </div>
-    
+
                 <div class="opening-hours">
                     <h5>Opening Hours</h5>
                     <ul class="opening-hours-list">
@@ -490,12 +518,12 @@
                             <span class="day">Monday to Friday:</span>
                             <span class="time">10:00 AM - 10:00PM</span>
                         </li>
-    
+
                         <li>
                             <span class="day">Saturday:</span>
                             <span class="time">10:00 AM - 11:00PM</span>
                         </li>
-    
+
                         <li>
                             <span class="day">Sunday:</span>
                             <span class="time">10:00 AM - 12:00AM</span>
@@ -504,12 +532,12 @@
                     <p class="special-note">* Extended Working Hours on Holidays *</p>
                 </div>
             </div>
-    
+
             <div class="copyright">
                 <p>© 2024 Twilight Timbers. All Rights Reserved | <a href="">Privacy Policy</a> | <a href="">Terms of
                         Service</a> </p>
             </div>
-    
+
         </div>
     </footer>
 

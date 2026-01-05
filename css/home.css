@@ -1,96 +1,176 @@
 /* =================================== HERO ================================= */
 
 #hero {
-    background-image: url("../images/pexels-taryn-elliott-4840134.jpg");
+  background-image: url("../images/pexels-taryn-elliott-4840134.jpg");
 }
 
 /* =================================== INTRODUCTION ================================= */
 
-.home-introduction-content {
+/* .home-introduction-content {
     display: flex;
     gap: 150px;
     align-items: center;
     justify-content: space-between;
     padding: 30px 60px;
+} */
+
+#introduction {
+  padding: 120px 0;
 }
 
-.home-introduction-content-info h1 {
-    margin-bottom: 30px;
+.home-introduction-content {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: 80px;
+}
+
+.home-introduction-content-info {
+  max-width: 520px;
+}
+
+#introduction .main-headings {
+  text-align: left;
+  margin-bottom: 24px;
 }
 
 .home-introduction-content-info p {
-    text-align: center;
+  font-size: 0.95rem;
+  line-height: 1.9;
+  color: var(--text-muted);
+  margin-bottom: 32px;
+  text-align: left;
 }
 
 .home-introduction-button {
-    margin-top: 30px;
-    text-align: center;
+  margin-top: 8px;
+}
+.home-introduction-content-info h1 {
+  margin-bottom: 30px;
 }
 
-.home-introduction-content img {
-    width: 100%;
-    border-radius: 10px;
+/* .home-introduction-content-info p {
+    text-align: center;
+} */
+
+/* .home-introduction-button {
+    margin-top: 30px;
+    text-align: center;
+} */
+
+.home-introduction-content-img img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: var(--soft-shadow);
+}
+
+.home-introduction-content-img img {
+  transition: transform 0.4s ease;
+}
+
+.home-introduction-content-img img:hover {
+  transform: scale(1.02);
 }
 
 /* =================================== HOME PARALLAX EFFECT ================================= */
 
 #home-parallax-section {
-    position: relative;
-    height: 600px;
-    background-image: url(../images/pexels-rachel-claire-4577179.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #fff;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+  position: relative;
+  height: 480px;
+  background-image: url(../images/pexels-rachel-claire-4577179.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center;
+  color: var(--white);
+}
+
+#home-parallax-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
 }
 
 .parallax-content {
-    padding: 20px 30px;
-    border-radius: 10px;
+  position: relative;
+  z-index: 1;
+
+  max-width: 720px;
+  padding: 0 20px;
 }
 
 .parallax-content h1 {
-    font-size: 3.7rem;
-    margin-top: 15%;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2.6rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: none;
+  margin-bottom: 16px;
 }
 
 .parallax-content p {
-    font-size: 1.3rem;
-    margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+  line-height: 1.8;
+
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 28px;
 }
 
 .parallax-button a {
-    color: #fff;
-    text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  color: var(--white);
+  text-transform: uppercase;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
 }
 
 .parallax-button a:hover {
-    text-decoration: underline;
+  opacity: 1;
 }
 
 /* =================================== HOME MENU SECTION ================================= */
 
 .home-menu-intro {
-    display: grid;
-    gap: 15px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+#home-menu-intro .main-headings {
+  margin-bottom: 48px;
 }
 
 .home-menu-item-img img {
-    width: 100%;
-    /* height: auto; */
-    height: calc(100% * 9 / 16); /* For a 16:9 aspect ratio */
-    object-fit: cover;
-    border-radius: 3px;
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.4s ease;
 }
 
-.home-menu-intro .home-menu-item:nth-child(1) {
+.home-menu-item:hover img {
+  transform: scale(1.04);
+}
+
+/* .home-menu-intro .home-menu-item:nth-child(1) {
     grid-column: 1;
     grid-row: span 2;
 }
@@ -112,217 +192,422 @@
 
 .home-menu-intro .home-menu-item:nth-child(6) {
     grid-column: 3;
-}
+} */
 
 .home-menu-item {
-    position: relative;
+  position: relative;
+  overflow: hidden;
 }
 
-.home-menu-item .home-menu-item-content {
-    position: absolute;
-    left: 0;
-    top: 80%;
+.home-menu-item-content {
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
 }
 
-.home-menu-item .home-menu-item-content a {
-    font-size: 1.2rem;
-    font-weight: 800;
-    background-color: rgb(255, 255, 255, 0.3);
-    color: black;
-    text-decoration: none;
-    padding: 7px 25px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+.home-menu-item-content a {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+
+  background-color: rgba(255, 255, 255, 0.85);
+  color: var(--forest-green);
+
+  padding: 6px 18px;
+  border-radius: 999px;
 }
 
 .home-menu-item .home-menu-item-content:hover {
-    transform: translateY(-5px);
-    transition: .3s ease-in-out;
-} 
+  transform: translateY(-5px);
+  transition: 0.3s ease-in-out;
+}
+
+.menu-cta {
+  margin-top: 48px;
+  text-align: center;
+}
+
+/* =================================== HOME EVENTS SECTION ================================= */
+
+#home-events {
+  padding: 120px 100px;
+  background-color: var(--forest-green);
+  color: var(--white);
+}
+
+#home-events .main-headings {
+  color: var(--white);
+  margin-bottom: 24px;
+}
+
+#home-events .sub-headings {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.88rem;
+  font-weight: 400; /* important */
+  line-height: 1.9;
+  letter-spacing: 0.3px;
+
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 720px;
+  margin: 0 auto 64px;
+
+  font-style: normal; /* ensure no italics */
+  text-align: center;
+}
+
+.home-events-content {
+  margin-bottom: 20px;
+}
+
+.home-event-key-points-section {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-bottom: 72px;
+  text-align: center;
+}
+
+.home-event-key-points {
+  max-width: 220px;
+}
+
+.home-event-key-points i {
+  font-size: 2rem !important;
+  margin-bottom: 14px;
+  color: var(--soft-cream);
+}
+
+.home-event-key-points p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 400; /* lighter */
+  line-height: 1.6;
+  letter-spacing: 0.2px;
+
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.home-upcoming-events-status {
+  margin: 24px 0 32px;
+}
+
+.event-label {
+  display: block;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--forest-green);
+  margin-bottom: 8px;
+}
+
+.event-timer {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.6px;
+  color: var(--text-muted);
+}
+
+.home-upcoming-events {
+  margin-top: 30px;
+}
+
+.home-upcoming-events h2 {
+  margin-bottom: 20px;
+}
+
+.home-upcoming-events-details {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 40px;
+
+  background-color: var(--soft-cream);
+  color: var(--text-primary);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.home-upcoming-events-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.home-upcoming-events-info {
+  padding: 40px 40px 40px 0;
+}
+
+.home-upcoming-events-info h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.8rem;
+  margin-bottom: 16px;
+}
+
+.home-upcoming-events-info p {
+  font-size: 0.88rem;
+  line-height: 1.7;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+.home-upcoming-events-timer {
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.home-upcoming-events-timer .timer {
+  margin-right: 5px !important;
+}
+
+.home-events-button a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.8px;
+  color: var(--forest-green);
+  text-transform: uppercase;
+}
 
 /* =================================== HOME TESTIMONIAL SECTION ================================= */
 
+#home-testimonials {
+  padding: 120px 0;
+}
+
 .testimonial-img img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 16px;
 }
 
 .testimonial-item {
-    padding: 40px 150px;
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
 
+.testimonial-info h4 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+}
+
+.testimonial-info p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.88rem;
+  font-weight: 400;
+  line-height: 1.85;
+  letter-spacing: 0.3px;
+
+  color: var(--text-muted);
 }
 
 .carousel-indicators button {
-    width: 10px !important;
-    height: 10px !important;
-    border-radius: 50% !important;
-    margin: 0 2px !important;
-    opacity: 0.5 !important;
-    background-color: black !important;
+  width: 6px !important;
+  height: 6px !important;
+  border-radius: 50% !important;
+  margin: 0 4px !important;
+
+  background-color: var(--forest-green) !important;
+  opacity: 0.3 !important;
+}
+
+.carousel-indicators .active {
+  opacity: 0.8 !important;
+}
+
+.carousel-item {
+  transition: opacity 0.4s ease;
 }
 
 .carousel-indicators button:active {
-    background-color: #000 !important;
-    transform: scale(1.5);
+  background-color: var(--forest-green) !important;
+  transform: scale(1.5);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  display: none !important;
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    color: black !important;
-    font-weight: bold !important;
-    background-color: black !important;
-    border: none !important;
-    padding: 10px !important; 
+  color: black !important;
+  font-weight: bold !important;
+  background-color: black !important;
+  border: none !important;
+  padding: 10px !important;
 }
 
 /* =================================== HOME RESERVATION PARALLAX EFFECT ================================= */
 
 .reservation-parallax-section {
-    position: relative;
-    height: 300px;
-    background-image: url(../images/pexels-alexandra-kollstrem-77751824-8856503.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #fff;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+  position: relative;
+  height: 300px;
+  background-image: url(../images/pexels-alexandra-kollstrem-77751824-8856503.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 .reservation {
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 90%;
-    padding: 30px;
+  background-color: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(2px);
+  max-width: 900px;
+  margin: 0 auto;
+
+  padding: 48px 56px;
+  border-radius: 16px;
+
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.reservation h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.4rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+  }  
+
+  .reservation .sub-headings {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.8;
+    letter-spacing: 0.3px;
+  
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 36px;
+    font-style: normal;
+  }
+  
+  .reservation form {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 32px;
+  }  
+
+  .reservation input {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+  
+    padding: 10px 16px;
     border-radius: 10px;
-    position: absolute;
-    top: 10%;
-    left: 5%;
-}
-
-.reservation form {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    margin-bottom: 30px;
-}
-
-.reservation input {
-    padding: 7px 15px;
-    margin-right: 20px;
-    border-radius: 5px;
     border: none;
-    font-size: 1rem;
-}
-   
-
-/* =================================== HOME EVENTS SECTION ================================= */
-
-#home-events {
-    text-align: center;
-    margin: 0;
-    padding: 50px 100px;
-    background-color: black;
-    color: white;
-}
-
-.home-events-content {
-    margin-bottom: 20px;
-}
-
-.home-event-key-points-section {
-    display: flex;
-    justify-content: space-around;
-}
-
-/* .home-event-key-points {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-} */
-
-.home-event-key-points i {
-    font-size: 2rem !important;
-}
-
-.home-upcoming-events {
-    margin-top: 30px;
-}
-
-.home-upcoming-events h2 {
-    margin-bottom: 20px;
-}
-
-.home-upcoming-events-details {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f0f0f0;
-    color: #000;
-    border-radius: 10px;
-    font-style: italic;
-}
-
-.home-upcoming-events-image img {
-    width: 100%;
-    border-top-left-radius : 10px;
-    border-bottom-left-radius : 10px;
-    padding-left: 0;
-    height: auto;
-}
-
-.home-upcoming-events-info {
-    padding-right: 20px;
-}
-
-.home-upcoming-events-info h2 {
-    font-size: 1.7rem;
-}
-
-.home-upcoming-events-timer {
-    font-size: 2.3rem;
-    font-weight: 700;
-    margin-bottom: 30px;
-}
-
-.home-upcoming-events-timer .timer {
-    margin-right: 5px !important;
-}
-
-.home-events-button a {
-    margin-top: 50px;
-    color: #000;
-}
-
+  
+    color: var(--text-primary);
+  }
+  
+  .reservation input::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .reservation input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.35);
+  }  
+  
+  .reservation .button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    margin-top: 8px;
+  }
+  
 /* =================================== HOME NEWSLETTER SECTION ================================= */
 
 #newsletter {
-    text-align: center;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 80px 100px;
+  text-align: center;
+  background-color: var(--forest-green-soft);
+  padding: 100px 0;
+  margin: 0;
 }
 
-.newsletter-form input {
-    width: 400px;
-    height: 40px;
-    border-radius: 20px;
-    padding: 0 20px;
-}
+.newsletter-section h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--forest-green);
+    margin-bottom: 12px;
+  }  
 
-.newsletter-form button {
-    width: 150px;
-    height: 40px;
-    border-radius: 20px;
-    padding: 0 20px;
-}
+  .newsletter-section .sub-headings {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.88rem;
+    font-weight: 400;
+    line-height: 1.8;
+    letter-spacing: 0.3px;
+  
+    color: var(--text-muted);
+    max-width: 520px;
+    margin: 0 auto 36px;
+  
+    font-style: normal;
+  }
+  
+  .newsletter-form {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+  }
+  
+  .newsletter-form input {
+    width: 360px;
+    height: 42px;
+    box-shadow: var(--soft-shadow);
+  
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.3px;
+  
+    padding: 0 18px;
+    border-radius: 24px;
+    border: none;
+  
+    outline: none;
+  }  
 
-.newsletter-form button:hover {
-    background-color: #000;
-    color: #f0f0f0;
-    /* box-shadow: rgb(255, 255, 255, 0.4); */
-}
+  .newsletter-form input::placeholder {
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, 0.45);
+  }
+  
+  .newsletter-form button {
+    height: 42px;
+    padding: 0 28px;
+  
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+  
+    border-radius: 24px;
+    border: none;
+  
+    background-color: var(--forest-green);
+    color: var(--white);
+    transition: all 0.3s ease;
+  }
+  
+  .newsletter-form button:hover {
+    background-color: var(--forest-green-light);
+  }
+  
+
