@@ -3,6 +3,10 @@
     background-image: url("../images/pexels-taryn-elliott-4840134.jpg");
 }
 
+#hero .hero-section {
+    top: 55%;
+}
+
 /* ======================= STORY OF TWILIGHT TIMBERS ================== */
 
 #story-of-twilight-timber {
@@ -10,29 +14,43 @@
 }
 
 #story-of-twilight-timber h2 {
-    text-align: center;
-    margin-bottom: 30px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.1rem;
+    font-weight: 500;
+    line-height: 1.4;
+    max-width: 900px;
+    margin: 0 auto 50px;
+    color: var(--forest-green);
 }
 
 .story-of-twilight-timber-content {
     display: flex;
-    gap: 100px;
-    align-items: center;
-    justify-content: space-around;
-
+    gap: 80px;
+    align-items: flex-start;
 }
 
-/* .story-of-twilight-timber-content p {
-    text-align: justify;
-} */
+.story-of-twilight-timber-info p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: var(--text-muted);
+    margin-bottom: 22px;
+}
+
+.story-of-twilight-timber-info p em {
+    font-style: italic;
+    font-weight: 500;
+    color: var(--text-primary);
+}
 
 .story-of-twilight-timber-info {
     width: 100%;
 }
 
 .story-of-twilight-timber-image img {
-    width: 90%;
-    border-radius: 10px;
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: var(--soft-shadow);
 }
 
 /* =========================== MISSION AND VALUES ============================ */
@@ -43,9 +61,17 @@
 }
 
 .mission-and-values-section {
-    background-color: rgba(0, 0, 0, 0.5);
-    height: 100%;
-    padding: 80px 100px;
+    background-color: rgba(0, 0, 0, 0.45);
+    padding: 90px 120px;
+}
+#misson-and-values .main-headings {
+    color: #ffffff;
+}
+
+#misson-and-values .sub-headings {
+    color: rgba(255, 255, 255, 0.8);
+    max-width: 700px;
+    margin: 0 auto 50px;
 }
 
 .mission-and-values-content-section {
@@ -60,8 +86,25 @@
     height: auto;
     padding: 30px 15px;
     text-align: center;
-    border: .5px dashed rgba(255, 255, 255, 0.4);
+
+    background-color: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(2px);
     border-radius: 10px;
+}
+
+.mission-and-values-content h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.mission-and-values-content p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.85);
 }
 
 /* ================================ OUR TEAM ============================ */
@@ -70,15 +113,22 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
-    padding: 0 40px;
+    gap: 40px;
+    padding: 40px 60px 0;
 }
 
 .team-member {
     position: relative;
     width: 30%;
     margin-bottom: 40px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--soft-shadow);
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-6px);
 }
 
 .team-member img {
@@ -91,7 +141,14 @@
     padding: 7px 15px;
     height: 40px;
     width: 100%;
-    background-color: rgba(38, 47, 38, 0.8);
+    background: linear-gradient(
+        to top,
+        rgba(31, 61, 43, 0.9),
+        rgba(31, 61, 43, 0.3)
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: white;
     text-align: center;
     opacity: 0;
@@ -116,7 +173,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 60px auto;
 }
 
@@ -125,23 +182,24 @@
     height: auto;
     /* transform: rotate(-5deg);
     transition: transform 0.3s ease, box-shadow 0.3s ease; */
-    border-radius: 10px;
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 16px;
+    box-shadow: var(--soft-shadow);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    transform: scale(1);
 }
 
 .ambiance-image:hover img {
-    transform: rotate(0deg) scale(1.1);
-    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 12px 28px rgba(0, 0, 0, 0.25);
+    transform: scale(1.05);
 }
 
 /* =============================== TESTIMONIALS ============================ */
 #testimonials {
     position: relative;
-    width: 75%;
     overflow: hidden;
+    max-width: 900px;
+    margin: 100px auto;
     text-align: center;
-    margin: 80px 160px;
 }
 
 .testimonial-carousel {
@@ -163,25 +221,31 @@
 }
 
 .testimonial-name {
-    font-weight: bold;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+    font-weight: 600;
     margin-top: 10px;
-    font-size: 1.2rem;
+    color: var(--forest-green);
 }
 
 .ratings i {
-    color: #28a745;
+    color: var(--earth-brown);
+    font-size: 0.9rem;
 }
 
 .testimonial-text {
-    font-style: italic;
-    margin-top: 20px;
-    padding: 0 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.8;
+    color: var(--text-muted);
+    max-width: 700px;
+    margin: 25px auto 0;
 }
 
 .quotes,
 .quotes-inverted {
-    font-size: 0.8rem;
-    color: #555;
+    font-size: 0.7rem;
+    color: var(--text-muted);
 }
 
 .quotes-inverted {
@@ -196,15 +260,21 @@
 #next-slide {
     font-size: 1.5rem;
     cursor: pointer;
-    color: #fff;
-    background: #000;
-    border: none;
+    background-color: transparent;
+    color: var(--forest-green);
+    border: 1px solid var(--forest-green);
+    width: 36px;
+    height: 36px;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
+}
+
+#prev-slide:hover,
+#next-slide:hover {
+    background-color: var(--forest-green);
+    color: var(--white);
 }
 
 #prev-slide {
@@ -215,26 +285,31 @@
     margin-left: 20px;
 }
 
-#prev-slide:hover,
-#next-slide:hover {
-    background: #444;
-}
-
 /* ========================== BEHIND THE SCENES ======================== */
 
 #behind-the-scenes {
-    padding: 50px;
-    background-color: #000;
+    padding: 90px 100px;
+    background-color: #0f0f0f;
     color: #fff;
     margin: 0;
 }
 
+#behind-the-scenes h1 {
+    color: var(--white);
+}
+
+#behind-the-scenes .sub-headings {
+    color: rgba(255, 255, 255, 0.7);
+}
+
 .behind-the-scenes-container {
     display: grid;
-    grid-gap: 10px;
+    gap: 16px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     padding: 10px;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 .behind-the-scenes-item {
@@ -243,7 +318,22 @@
     font-size: 1.88rem;
     text-align: center;
     overflow: hidden;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+    border-radius: 16px;
+}
 
+.behind-the-scenes-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.behind-the-scenes-item:hover img {
+    transform: scale(1.04);
 }
 
 .behind-the-scenes-item image {
@@ -285,85 +375,127 @@
 
 /* =================================== FAQ ================================= */
 
-.faq-button {
-    text-align: center;
-}
-
-.faq-button a {
-    font-size: 1.2rem;
-    font-style: italic;
-    color: black;
-}
-
 #faq {
     padding: 30px 70px;
 }
 
+/* Heading underline */
+#faq .main-headings {
+    margin-bottom: 10px;
+}
+
+#faq .main-headings::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 2px;
+    background-color: var(--earth-brown);
+    margin: 14px auto 0;
+}
+
+/* Search */
 .faq-search {
     margin-bottom: 40px;
     text-align: center;
 }
 
 .faq-search input {
-    width: 80%;
-    padding: 10px 25px;
-    font-size: 1rem;
-    border-radius: 5px;
-    outline: none;
-    border: 1px solid #000;
-    transition: all 0.3s ease;
+    border-radius: 30px;
+    border: 1px solid var(--warm-grey);
+    padding: 12px 28px;
+    font-size: 0.95rem;
 }
 
+.faq-search input:focus {
+    outline: none;
+    border-color: var(--forest-green);
+}
+
+/* Layout */
 .faq-section {
     display: flex;
-    gap: 30px;
-    align-items: center;
-    justify-content: space-around;
+    gap: 60px;
+    align-items: flex-start;
     margin-bottom: 30px;
+}
+
+.faq {
+    flex: 0 0 60%;
+}
+
+.faq-image {
+    flex: 0 0 40%;
 }
 
 .faq-image img {
     width: 100%;
-    border-radius: 10px;
+    max-width: 380px;
+    margin-left: auto;
+    display: block;
 }
 
+/* FAQ items */
 .faq-item {
-    border-bottom: 1px solid #ddd;
-    padding: 10px 10px;
+    border-bottom: 1px solid var(--warm-grey);
+    padding: 22px 10px;
 }
-
 
 .faq-question {
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
-    font-weight: bold;
-    font-size: 1rem;
-}
 
-.faq-answer {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease-out;
-    margin-top: 10px;
-    font-size: .9rem;
-    color: #555;
+    padding-right: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 0.9rem;
+    letter-spacing: 0.3px;
 }
 
 .toggle-icon {
-    font-size: 1.2rem;
-    color: #333;
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.faq-question:hover .toggle-icon {
+    opacity: 0.7;
 }
 
 .faq-question.active .toggle-icon {
     transform: rotate(45deg);
 }
 
-.faq-answer.show {
-    padding: 10px 25px;
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+    margin-top: 16px;
 }
 
 .faq-answer p {
     margin: 0;
+    font-size: 0.85rem;
+    line-height: 1.75;
+    color: var(--text-muted);
+    padding-bottom: 10px; 
+}
+
+/* CTA */
+.faq-button {
+    text-align: center;
+}
+
+.faq-button a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--forest-green);
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.faq-button a:hover {
+    opacity: 0.7;
 }

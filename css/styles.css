@@ -93,9 +93,23 @@ a {
 }
 
 .sub-headings {
-  font-style: italic;
-  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
   color: var(--text-muted);
+  margin-top: 12px;
+  text-align: center;
+  position: relative;
+}
+
+.sub-headings::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 1px;
+  background-color: var(--earth-brown);
+  margin: 12px auto 0;
 }
 
 .button {
