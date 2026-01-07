@@ -2,3 +2,334 @@
 #hero {
     background-image: url("../images/pexels-taryn-elliott-4840134.jpg");
   }
+
+  /* ===================== MENU PHILOSOPHY ===================== */
+
+#menu-philosophy {
+    margin: 120px auto 80px;
+    max-width: 900px;
+    text-align: center;
+}
+
+.menu-philosophy-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: var(--forest-green);
+    letter-spacing: 0.3px;
+    padding: 0 20px;
+}
+
+/* subtle divider under philosophy */
+.menu-philosophy-text::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 2px;
+    background-color: var(--earth-brown);
+    margin: 28px auto 0;
+}
+
+/* ===================== MENU SPOTLIGHT ===================== */
+
+#menu-spotlight {
+    margin: 80px 0;
+}
+
+.menu-spotlight-container {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 80px;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* IMAGE */
+.menu-spotlight-image img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: var(--soft-shadow);
+    object-fit: cover;
+}
+
+/* CONTENT */
+.menu-spotlight-content h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+}
+
+.menu-spotlight-content h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: var(--forest-green);
+    margin-bottom: 18px;
+}
+
+.menu-spotlight-content p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--text-muted);
+    max-width: 420px;
+    margin-bottom: 24px;
+}
+
+/* PRICE */
+.menu-price {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--forest-green);
+    margin-bottom: 30px;
+}
+
+/* CTA BUTTON */
+.menu-spotlight-content .button {
+    padding: 10px 26px;
+}
+
+/* ===================== MENU FILTER ===================== */
+
+#menu-filter {
+    margin: 100px auto 60px;
+    text-align: center;
+}
+
+.menu-filter-list {
+    display: inline-flex;
+    gap: 40px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* INDIVIDUAL TAB */
+.menu-filter-item {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    color: var(--text-muted);
+    cursor: pointer;
+    position: relative;
+    padding-bottom: 6px;
+    transition: color 0.3s ease;
+}
+
+/* HOVER */
+.menu-filter-item:hover {
+    color: var(--forest-green);
+}
+
+/* ACTIVE STATE */
+.menu-filter-item.active {
+    color: var(--forest-green);
+}
+
+/* ACTIVE UNDERLINE */
+.menu-filter-item.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--earth-brown);
+}
+
+/* ===================== MAIN MENU LIST ===================== */
+
+#menu-list {
+    max-width: 900px;
+    margin: 0 auto 120px;
+}
+
+/* INDIVIDUAL MENU ITEM */
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 22px 0;
+    border-bottom: 1px solid var(--warm-grey);
+
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+/* Step 1: fade visually */
+.menu-item.fade-out {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  
+  /* Step 2: remove from layout */
+  .menu-item.is-hidden {
+    display: none;
+  }
+
+/* TEXT SIDE */
+.menu-item-info h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--forest-green);
+    margin-bottom: 6px;
+}
+
+.menu-item-info p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    color: var(--text-muted);
+    max-width: 520px;
+}
+
+/* PRICE */
+.menu-item-price {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--forest-green);
+    white-space: nowrap;
+}
+
+/* SUBTLE HOVER (OPTIONAL, VERY LIGHT) */
+.menu-item:hover {
+    transform: translateX(4px);
+}
+
+/* ===================== CHEF'S SURPRISE ===================== */
+
+#menu-chef-surprise {
+    background-color: var(--forest-green-soft);
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.menu-chef-surprise-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Heading */
+.menu-chef-surprise-content h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: var(--forest-green);
+    margin-bottom: 18px;
+}
+
+/* Description */
+.menu-chef-surprise-content p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--text-muted);
+    margin-bottom: 36px;
+    padding: 0 10px;
+}
+
+/* CTA Button */
+.menu-chef-surprise-content .button {
+    padding: 12px 30px;
+}
+
+/* ===== CHEF SURPRISE MODAL ===== */
+
+.chef-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 9999;
+}
+
+.chef-modal-overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.chef-modal {
+    background: var(--soft-cream);
+    max-width: 520px;
+    width: 90%;
+    padding: 40px;
+    border-radius: 16px;
+    transform: translateY(20px);
+    transition: transform 0.3s ease;
+}
+
+.chef-modal-overlay.active .chef-modal {
+    transform: translateY(0);
+}
+
+.chef-modal-close {
+    position: absolute;
+    top: 16px;
+    right: 18px;
+    background: none;
+    border: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+/* Modal heading */
+.chef-modal h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.45rem;
+    font-weight: 500;
+    color: var(--forest-green);
+    margin-bottom: 8px;
+  }
+  
+  /* Modal description text */
+  .chef-modal p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85rem;   /* reduced */
+    line-height: 1.55;
+    color: var(--text-muted);
+    margin-bottom: 24px;
+  }
+  
+.chef-modal-form textarea {
+    width: 100%;
+    min-height: 90px;
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: 1px solid var(--warm-grey);
+    margin-bottom: 18px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    color: var(--text-primary);
+    resize: vertical;
+
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.chef-modal textarea:focus {
+    outline: none;
+    border-color: var(--forest-green);
+    box-shadow: 0 0 0 2px rgba(31, 61, 43, 0.15);
+}
+
+.chef-modal-form .button {
+    margin-top: 10px;
+}
