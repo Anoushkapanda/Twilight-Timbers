@@ -34,6 +34,10 @@
     <!-- Favicon (Small icon displayed in browser tab) -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
+    <!-- Bootstrap link -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <!-- Link to External Stylesheets (if any) -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/menu.css">
@@ -43,11 +47,12 @@
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Bootstrap link -->
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Google Fonts (optional, if using a custom font) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Fuzzy+Bubbles:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Qwitcher+Grypen:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
 
     <!-- Lightbox2 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/css/lightbox.min.css" rel="stylesheet">
@@ -71,9 +76,23 @@
 
 <body>
 
+    <!-- TOP INFO BAR -->
+    <div class="top-bar">
+        <div class="top-bar-left">
+            <span><i class="fa-solid fa-leaf quotes-inverted"></i> Seasonal Forest Specials Available</span>
+        </div>
+
+        <div class="top-bar-right">
+            <span>Open: 12 PM – 11 PM</span>
+            <span class="divider">|</span>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+        </div>
+    </div>
+
     <header>
         <div class="logo">
-            <a href="index_home.html">Twilight Timbers</a>
+            <a href="index_home.html">Twilight <span>Timbers</span></a>
         </div>
         <div class="hamburger">
             <span></span>
@@ -105,24 +124,225 @@
     </header>
 
     <main>
-        
-<!-- HERO SECTION -->
 
-<section id="hero">
-    <div class="hero-section">
-        <div class="hero-section-heading">
-            <h1>About Us</h1>
-        </div>
-        <div class="hero-section-description">
-            <p>Discover the story behind Twilight Timbers and our passion for blending nature with flavor.</p>
-        </div>
-        <!-- <div class="hero-section-buttons">
+        <!-- HERO SECTION -->
+
+        <section id="hero">
+            <div class="hero-section">
+                <div class="hero-section-heading">
+                    <h1>Menu</h1>
+                </div>
+                <div class="hero-section-description">
+                    <p>Thoughtfully curated dishes inspired by the forest</p>
+                </div>
+                <!-- <div class="hero-section-buttons">
             <a href="menu.html" class="button">Explore Menu</a>
             <a href="events_and_booking.html" class="button">Reserve a Table</a>
         </div> -->
-    </div>
+            </div>
+        </section>
 
-</section>
+        <!-- CURATED PHILOSOPHY SECTION -->
+        <section id="menu-philosophy" class="all-sections">
+            <p class="menu-philosophy-text">
+                Every dish at Twilight Timbers is thoughtfully curated — guided by the seasons,
+                inspired by the forest, and crafted just for you.
+            </p>
+        </section>
+
+        <!-- SPOTLIGHT OF THE WEEK -->
+        <section id="menu-spotlight" class="all-sections">
+            <div class="menu-spotlight-container">
+
+                <div class="menu-spotlight-image">
+                    <!-- Image goes here -->
+                    <img src="images/Midnight Butterfly Fizz, Color-changing cocktail with citrus, elderflower, and effervescence.jfif"
+                        alt="Forest Highlight of the Week">
+                </div>
+
+                <div class="menu-spotlight-content">
+                    <h2>Forest Highlight of the Week</h2>
+                    <h3>Wild Mushroom Risotto</h3>
+                    <p>
+                        A comforting blend of seasonal wild mushrooms, slow-cooked arborio rice,
+                        finished with forest herbs and truffle essence.
+                    </p>
+                    <span class="menu-price">₹520</span>
+
+                    <a href="events_and_booking.html" class="button">
+                        Reserve a Table
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- MENU CATEGORY FILTER -->
+        <section id="menu-filter" class="all-sections">
+            <ul class="menu-filter-list">
+                <li class="menu-filter-item active" data-filter="all">All</li>
+                <li class="menu-filter-item" data-filter="lunch">Lunch</li>
+                <li class="menu-filter-item" data-filter="dinner">Dinner</li>
+                <li class="menu-filter-item" data-filter="starters">Starters</li>
+                <li class="menu-filter-item" data-filter="drinks">Drinks</li>
+                <li class="menu-filter-item" data-filter="desserts">Desserts</li>
+            </ul>
+        </section>
+
+        <!-- MAIN MENU LIST -->
+        <section id="menu-list" class="all-sections">
+
+            <!-- MENU ITEM -->
+            <div class="menu-item" data-category="starters">
+                <div class="menu-item-info">
+                    <h4>Forest Herb Bruschetta</h4>
+                    <p>Toasted sourdough, wild herbs, olive oil</p>
+                </div>
+                <span class="menu-item-price">₹320</span>
+            </div>
+
+            <div class="menu-item" data-category="starters">
+                <div class="menu-item-info">
+                    <h4>Smoked Mushroom Skewers</h4>
+                    <p>Char-grilled mushrooms, forest spice glaze</p>
+                </div>
+                <span class="menu-item-price">₹360</span>
+            </div>
+
+            <div class="menu-item" data-category="starters">
+                <div class="menu-item-info">
+                    <h4>Charred Corn & Herb Bites</h4>
+                    <p>Fire-roasted corn, fresh herbs, citrus salt</p>
+                </div>
+                <span class="menu-item-price">₹300</span>
+            </div>
+
+            <div class="menu-item" data-category="lunch">
+                <div class="menu-item-info">
+                    <h4>Grilled Forest Vegetables</h4>
+                    <p>Seasonal vegetables, herb glaze, woodland spices</p>
+                </div>
+                <span class="menu-item-price">₹450</span>
+            </div>
+
+            <div class="menu-item" data-category="lunch">
+                <div class="menu-item-info">
+                    <h4>Wild Mushroom Risotto</h4>
+                    <p>Creamy arborio rice, truffle oil, forest herbs</p>
+                </div>
+                <span class="menu-item-price">₹520</span>
+            </div>
+
+            <div class="menu-item" data-category="lunch">
+                <div class="menu-item-info">
+                    <h4>Cedar Roasted Paneer</h4>
+                    <p>Smoked paneer, seasonal greens, thyme butter</p>
+                </div>
+                <span class="menu-item-price">₹480</span>
+            </div>
+
+            <div class="menu-item" data-category="dinner">
+                <div class="menu-item-info">
+                    <h4>Forest Fire Lasagna</h4>
+                    <p>Layered vegetables, slow-cooked tomato, herbs</p>
+                </div>
+                <span class="menu-item-price">₹560</span>
+            </div>
+
+            <div class="menu-item" data-category="dinner">
+                <div class="menu-item-info">
+                    <h4>Twilight Herb Gnocchi</h4>
+                    <p>Potato gnocchi, cream sauce, forest greens</p>
+                </div>
+                <span class="menu-item-price">₹540</span>
+            </div>
+
+            <div class="menu-item" data-category="desserts">
+                <div class="menu-item-info">
+                    <h4>Forest Berry Tart</h4>
+                    <p>Seasonal berries, almond crust, vanilla cream</p>
+                </div>
+                <span class="menu-item-price">₹320</span>
+            </div>
+
+            <div class="menu-item" data-category="desserts">
+                <div class="menu-item-info">
+                    <h4>Woodland Chocolate Mousse</h4>
+                    <p>Dark chocolate, hazelnut crumble</p>
+                </div>
+                <span class="menu-item-price">₹340</span>
+            </div>
+
+            <div class="menu-item" data-category="desserts">
+                <div class="menu-item-info">
+                    <h4>Honey Roasted Fig Delight</h4>
+                    <p>Warm figs, forest honey, soft mascarpone</p>
+                </div>
+                <span class="menu-item-price">₹360</span>
+            </div>
+
+            <div class="menu-item" data-category="drinks">
+                <div class="menu-item-info">
+                    <h4>Pineapple Cedar Spritz</h4>
+                    <p>Pineapple, cedar essence, sparkling soda</p>
+                </div>
+                <span class="menu-item-price">₹340</span>
+            </div>
+
+            <div class="menu-item" data-category="drinks">
+                <div class="menu-item-info">
+                    <h4>Midnight Butterfly Fizz</h4>
+                    <p>Citrus, elderflower, color-changing botanical infusion</p>
+                </div>
+                <span class="menu-item-price">₹380</span>
+            </div>
+
+            <div class="menu-item" data-category="drinks">
+                <div class="menu-item-info">
+                    <h4>Forest Mint Cooler</h4>
+                    <p>Fresh mint, lime, chilled spring soda</p>
+                </div>
+                <span class="menu-item-price">₹260</span>
+            </div>
+
+            <!-- Add more items later -->
+        </section>
+
+        <!-- CHEF’S SURPRISE SECTION -->
+        <section id="menu-chef-surprise" class="all-sections">
+            <div class="menu-chef-surprise-content">
+                <h2>Let Our Chef Surprise You</h2>
+                <p>
+                    Share your preferences, allergies, or cravings —
+                    and let our chef craft a personalized dish just for you.
+                </p>
+                <button class="button" id="open-chef-modal">
+                    Tell Us Your Preferences
+                </button>
+            </div>
+        </section>
+
+        <!-- CHEF'S SURPRISE MODAL -->
+        <div id="chef-surprise-modal" class="chef-modal-overlay" aria-hidden="true">
+            <div class="chef-modal">
+                <button class="chef-modal-close" aria-label="Close modal">&times;</button>
+
+                <h3>Let the Chef Surprise You</h3>
+                <p>
+                    Tell us what you love, what you avoid, or any allergies.
+                    Our chef will craft something special just for you.
+                </p>
+
+                <form class="chef-modal-form">
+                    <textarea placeholder="What do you enjoy eating?"></textarea>
+                    <textarea placeholder="Anything you dislike or are allergic to?"></textarea>
+
+                    <button type="submit" class="button">
+                        Send to the Chef
+                    </button>
+                </form>
+            </div>
+        </div>
 
 
     </main>
@@ -153,10 +373,10 @@
                         <li><a href="gallery.html">Gallery</a></li>
                         <li><a href="events_and_booking.html">Events and Booking</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
-    
+
                     </ul>
                 </div>
-    
+
                 <div class="footer-contact-section">
                     <h5>Contact Us</h5>
                     <p>
@@ -169,7 +389,7 @@
                         <strong>Address: </strong> 123 Main St, Anytown, USA
                     </p>
                 </div>
-    
+
                 <div class="opening-hours">
                     <h5>Opening Hours</h5>
                     <ul class="opening-hours-list">
@@ -177,12 +397,12 @@
                             <span class="day">Monday to Friday:</span>
                             <span class="time">10:00 AM - 10:00PM</span>
                         </li>
-    
+
                         <li>
                             <span class="day">Saturday:</span>
                             <span class="time">10:00 AM - 11:00PM</span>
                         </li>
-    
+
                         <li>
                             <span class="day">Sunday:</span>
                             <span class="time">10:00 AM - 12:00AM</span>
@@ -191,17 +411,18 @@
                     <p class="special-note">* Extended Working Hours on Holidays *</p>
                 </div>
             </div>
-    
+
             <div class="copyright">
                 <p>© 2024 Twilight Timbers. All Rights Reserved | <a href="">Privacy Policy</a> | <a href="">Terms of
                         Service</a> </p>
             </div>
-    
+
         </div>
     </footer>
 
     <!-- main js file -->
     <script src="js/main.js" defer></script>
+    <script src="js/menu.js"></script>
 
     <!-- Bootstrap js link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
