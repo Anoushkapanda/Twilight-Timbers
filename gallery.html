@@ -34,20 +34,24 @@
     <!-- Favicon (Small icon displayed in browser tab) -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
+    <!-- Bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <!-- Link to External Stylesheets (if any) -->
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/gallery.css">
 
     <!-- fontawesome link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Bootstrap link -->
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Google Fonts (optional, if using a custom font) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Fuzzy+Bubbles:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Qwitcher+Grypen:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
 
     <!-- Lightbox2 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/css/lightbox.min.css" rel="stylesheet">
@@ -71,9 +75,24 @@
 
 <body>
 
+    <!-- TOP INFO BAR -->
+    <div class="top-bar">
+        <div class="top-bar-left">
+            <span><i class="fa-solid fa-leaf quotes-inverted"></i> Seasonal Forest Specials Available</span>
+        </div>
+
+        <div class="top-bar-right">
+            <span>Open: 12 PM – 11 PM</span>
+            <span class="divider">|</span>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+        </div>
+    </div>
+
+    <!-- MAIN HEADER -->
     <header>
         <div class="logo">
-            <a href="index_home.html">Twilight Timbers</a>
+            <a href="index_home.html">Twilight <span>Timbers</span></a>
         </div>
         <div class="hamburger">
             <span></span>
@@ -105,24 +124,282 @@
     </header>
 
     <main>
-        
-<!-- HERO SECTION -->
 
-<section id="hero">
-    <div class="hero-section">
-        <div class="hero-section-heading">
-            <h1>About Us</h1>
-        </div>
-        <div class="hero-section-description">
-            <p>Discover the story behind Twilight Timbers and our passion for blending nature with flavor.</p>
-        </div>
-        <!-- <div class="hero-section-buttons">
+        <!-- HERO SECTION -->
+
+        <section id="hero">
+            <div class="hero-section">
+                <div class="hero-section-heading">
+                    <h1>Gallery</h1>
+                </div>
+                <div class="hero-section-description">
+                    <p>A glimpse into the forest-inspired world of Twilight Timbers.</p>
+                </div>
+                <!-- <div class="hero-section-buttons">
             <a href="menu.html" class="button">Explore Menu</a>
             <a href="events_and_booking.html" class="button">Reserve a Table</a>
         </div> -->
-    </div>
+            </div>
 
-</section>
+        </section>
+
+        <!-- GALLERY PHILOSOPHY -->
+        <section id="gallery-philosophy" class="all-sections">
+            <p class="gallery-philosophy-text">
+                Moments, textures, and flavors — captured in their most natural form.
+            </p>
+        </section>
+
+        <!-- GALLERY FILTER -->
+        <section id="gallery-filter" class="all-sections">
+            <ul class="gallery-filter-list">
+                <li class="gallery-filter-item active" data-filter="all">All</li>
+                <li class="gallery-filter-item" data-filter="ambiance">Ambiance</li>
+                <li class="gallery-filter-item" data-filter="food">Food & Drinks</li>
+                <li class="gallery-filter-item" data-filter="event">Events</li>
+                <li class="gallery-filter-item" data-filter="behindScene">Behind the Scenes</li>
+            </ul>
+        </section>
+
+
+        <!-- GALLERY GRID -->
+        <section id="gallery-grid" class="all-sections">
+            <div class="gallery-item" data-category="ambiance">
+                <a href="images/Midnight Butterfly Fizz, Color-changing cocktail with citrus, elderflower, and effervescence.jfif"
+                    data-lightbox="gallery">
+                    <img src="images/Midnight Butterfly Fizz, Color-changing cocktail with citrus, elderflower, and effervescence.jfif"
+                        alt="">
+                </a>
+            </div>
+
+            <div class="gallery-item" data-category="food">
+                <a href="images/Midnight Butterfly Fizz, Color-changing cocktail with citrus, elderflower, and effervescence.jfif"
+                    data-lightbox="gallery">
+                    <img src="images/Midnight Butterfly Fizz, Color-changing cocktail with citrus, elderflower, and effervescence.jfif"
+                        alt="">
+                </a>
+            </div>
+
+            <div class="gallery-item" data-category="behindScene">
+                <a href="images/Midnight Butterfly Fizz, Color-changing cocktail with citrus, elderflower, and effervescence.jfif"
+                    data-lightbox="gallery">
+                    <img src="images/Midnight Butterfly Fizz, Color-changing cocktail with citrus, elderflower, and effervescence.jfif"
+                        alt="">
+                </a>
+            </div>
+
+            <div class="gallery-item" data-category="event">
+                <a href="images/Midnight Butterfly Fizz, Color-changing cocktail with citrus, elderflower, and effervescence.jfif"
+                    data-lightbox="gallery">
+                    <img src="images/Midnight Butterfly Fizz, Color-changing cocktail with citrus, elderflower, and effervescence.jfif"
+                        alt="">
+                </a>
+            </div>
+
+            <div class="gallery-item" data-category="ambiance">
+                <a href="images/Midnight Butterfly Fizz, Color-changing cocktail with citrus, elderflower, and effervescence.jfif"
+                    data-lightbox="gallery">
+                    <img src="images/Midnight Butterfly Fizz, Color-changing cocktail with citrus, elderflower, and effervescence.jfif"
+                        alt="">
+                </a>
+            </div>
+
+            <div class="gallery-item" data-category="event">
+                <a href="images/Midnight Butterfly Fizz, Color-changing cocktail with citrus, elderflower, and effervescence.jfif"
+                    data-lightbox="gallery">
+                    <img src="images/Midnight Butterfly Fizz, Color-changing cocktail with citrus, elderflower, and effervescence.jfif"
+                        alt="">
+                </a>
+            </div>
+
+            <div class="gallery-item" data-category="ambiance">
+                <a href="images/Midnight Butterfly Fizz, Color-changing cocktail with citrus, elderflower, and effervescence.jfif"
+                    data-lightbox="gallery">
+                    <img src="images/Midnight Butterfly Fizz, Color-changing cocktail with citrus, elderflower, and effervescence.jfif"
+                        alt="">
+                </a>
+            </div>
+
+            <div class="gallery-item" data-category="behindScene">
+                <a href="images/Midnight Butterfly Fizz, Color-changing cocktail with citrus, elderflower, and effervescence.jfif"
+                    data-lightbox="gallery">
+                    <img src="images/Midnight Butterfly Fizz, Color-changing cocktail with citrus, elderflower, and effervescence.jfif"
+                        alt="">
+                </a>
+            </div>
+
+            <div class="gallery-item" data-category="ambiance">
+                <a href="images/Midnight Butterfly Fizz, Color-changing cocktail with citrus, elderflower, and effervescence.jfif"
+                    data-lightbox="gallery">
+                    <img src="images/Midnight Butterfly Fizz, Color-changing cocktail with citrus, elderflower, and effervescence.jfif"
+                        alt="">
+                </a>
+            </div>
+
+            <div class="gallery-item" data-category="food">
+                <a href="images/Midnight Butterfly Fizz, Color-changing cocktail with citrus, elderflower, and effervescence.jfif"
+                    data-lightbox="gallery">
+                    <img src="images/Midnight Butterfly Fizz, Color-changing cocktail with citrus, elderflower, and effervescence.jfif"
+                        alt="">
+                </a>
+            </div>
+
+            <div class="gallery-item" data-category="event">
+                <a href="images/Midnight Butterfly Fizz, Color-changing cocktail with citrus, elderflower, and effervescence.jfif"
+                    data-lightbox="gallery">
+                    <img src="images/Midnight Butterfly Fizz, Color-changing cocktail with citrus, elderflower, and effervescence.jfif"
+                        alt="">
+                </a>
+            </div>
+
+            <div class="gallery-item" data-category="behindScene">
+                <a href="images/Midnight Butterfly Fizz, Color-changing cocktail with citrus, elderflower, and effervescence.jfif"
+                    data-lightbox="gallery">
+                    <img src="images/Midnight Butterfly Fizz, Color-changing cocktail with citrus, elderflower, and effervescence.jfif"
+                        alt="">
+                </a>
+            </div>
+
+            <div class="gallery-item" data-category="ambiance">
+                <a href="images/Midnight Butterfly Fizz, Color-changing cocktail with citrus, elderflower, and effervescence.jfif"
+                    data-lightbox="gallery">
+                    <img src="images/Midnight Butterfly Fizz, Color-changing cocktail with citrus, elderflower, and effervescence.jfif"
+                        alt="">
+                </a>
+            </div>
+
+            <div class="gallery-item" data-category="food">
+                <a href="images/Midnight Butterfly Fizz, Color-changing cocktail with citrus, elderflower, and effervescence.jfif"
+                    data-lightbox="gallery">
+                    <img src="images/Midnight Butterfly Fizz, Color-changing cocktail with citrus, elderflower, and effervescence.jfif"
+                        alt="">
+                </a>
+            </div>
+
+            <div class="gallery-item" data-category="event">
+                <a href="images/Midnight Butterfly Fizz, Color-changing cocktail with citrus, elderflower, and effervescence.jfif"
+                    data-lightbox="gallery">
+                    <img src="images/Midnight Butterfly Fizz, Color-changing cocktail with citrus, elderflower, and effervescence.jfif"
+                        alt="">
+                </a>
+            </div>
+
+            <div class="gallery-item" data-category="ambiance">
+                <a href="images/Midnight Butterfly Fizz, Color-changing cocktail with citrus, elderflower, and effervescence.jfif"
+                    data-lightbox="gallery">
+                    <img src="images/Midnight Butterfly Fizz, Color-changing cocktail with citrus, elderflower, and effervescence.jfif"
+                        alt="">
+                </a>
+            </div>
+
+            <div class="gallery-item" data-category="food">
+                <a href="images/Midnight Butterfly Fizz, Color-changing cocktail with citrus, elderflower, and effervescence.jfif"
+                    data-lightbox="gallery">
+                    <img src="images/Midnight Butterfly Fizz, Color-changing cocktail with citrus, elderflower, and effervescence.jfif"
+                        alt="">
+                </a>
+            </div>
+
+            <div class="gallery-item" data-category="ambiance">
+                <a href="images/Midnight Butterfly Fizz, Color-changing cocktail with citrus, elderflower, and effervescence.jfif"
+                    data-lightbox="gallery">
+                    <img src="images/Midnight Butterfly Fizz, Color-changing cocktail with citrus, elderflower, and effervescence.jfif"
+                        alt="">
+                </a>
+            </div>
+
+            <div class="gallery-item" data-category="event">
+                <a href="images/Midnight Butterfly Fizz, Color-changing cocktail with citrus, elderflower, and effervescence.jfif"
+                    data-lightbox="gallery">
+                    <img src="images/Midnight Butterfly Fizz, Color-changing cocktail with citrus, elderflower, and effervescence.jfif"
+                        alt="">
+                </a>
+            </div>
+
+            <div class="gallery-item" data-category="food">
+                <a href="images/Midnight Butterfly Fizz, Color-changing cocktail with citrus, elderflower, and effervescence.jfif"
+                    data-lightbox="gallery">
+                    <img src="images/Midnight Butterfly Fizz, Color-changing cocktail with citrus, elderflower, and effervescence.jfif"
+                        alt="">
+                </a>
+            </div>
+
+            <div class="gallery-item" data-category="behindScene">
+                <a href="images/Midnight Butterfly Fizz, Color-changing cocktail with citrus, elderflower, and effervescence.jfif"
+                    data-lightbox="gallery">
+                    <img src="images/Midnight Butterfly Fizz, Color-changing cocktail with citrus, elderflower, and effervescence.jfif"
+                        alt="">
+                </a>
+            </div>
+
+            <div class="gallery-item" data-category="ambiance">
+                <a href="images/Midnight Butterfly Fizz, Color-changing cocktail with citrus, elderflower, and effervescence.jfif"
+                    data-lightbox="gallery">
+                    <img src="images/Midnight Butterfly Fizz, Color-changing cocktail with citrus, elderflower, and effervescence.jfif"
+                        alt="">
+                </a>
+            </div>
+
+            <div class="gallery-item" data-category="food">
+                <a href="images/Midnight Butterfly Fizz, Color-changing cocktail with citrus, elderflower, and effervescence.jfif"
+                    data-lightbox="gallery">
+                    <img src="images/Midnight Butterfly Fizz, Color-changing cocktail with citrus, elderflower, and effervescence.jfif"
+                        alt="">
+                </a>
+            </div>
+        </section>
+
+        <!-- gallery highlight -->
+
+        <section id="gallery-highlights" class="all-sections">
+            <h2 class="gallery-highlight-heading">Every Corner Tells a Story</h2>
+            <p class="gallery-highlight-sub">
+                From flickering candlelight to forest-inspired plates — moments that define Twilight Timbers.
+            </p>
+
+            <div class="gallery-highlight-grid">
+                <div class="highlight-item">
+                    <img src="images/Midnight Butterfly Fizz, Color-changing cocktail with citrus, elderflower, and effervescence.jfif"
+                        alt="">
+                    <span>Forest Evenings</span>
+                </div>
+
+                <div class="highlight-item">
+                    <img src="images/Midnight Butterfly Fizz, Color-changing cocktail with citrus, elderflower, and effervescence.jfif"
+                        alt="">
+                    <span>Crafted Plates</span>
+                </div>
+
+                <div class="highlight-item">
+                    <img src="images/Midnight Butterfly Fizz, Color-changing cocktail with citrus, elderflower, and effervescence.jfif"
+                        alt="">
+                    <span>Nature in Detail</span>
+                </div>
+
+                <div class="highlight-item">
+                    <img src="images/Midnight Butterfly Fizz, Color-changing cocktail with citrus, elderflower, and effervescence.jfif"
+                        alt="">
+                    <span>Gatherings & Moments</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- cta -->
+
+        <section id="gallery-cta" class="all-sections">
+            <div class="gallery-cta-content">
+                <h2>Experience It in Person</h2>
+                <p>
+                    Photos capture the mood — but Twilight Timbers is meant to be felt.
+                    Join us for an unforgettable dining experience.
+                </p>
+
+                <div class="gallery-cta-buttons">
+                    <a href="menu.html" class="button">Explore the Menu</a>
+                    <a href="events_and_booking.html" class="button button-outline">Reserve a Table</a>
+                </div>
+            </div>
+        </section>
 
 
     </main>
@@ -153,10 +430,10 @@
                         <li><a href="gallery.html">Gallery</a></li>
                         <li><a href="events_and_booking.html">Events and Booking</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
-    
+
                     </ul>
                 </div>
-    
+
                 <div class="footer-contact-section">
                     <h5>Contact Us</h5>
                     <p>
@@ -169,7 +446,7 @@
                         <strong>Address: </strong> 123 Main St, Anytown, USA
                     </p>
                 </div>
-    
+
                 <div class="opening-hours">
                     <h5>Opening Hours</h5>
                     <ul class="opening-hours-list">
@@ -177,12 +454,12 @@
                             <span class="day">Monday to Friday:</span>
                             <span class="time">10:00 AM - 10:00PM</span>
                         </li>
-    
+
                         <li>
                             <span class="day">Saturday:</span>
                             <span class="time">10:00 AM - 11:00PM</span>
                         </li>
-    
+
                         <li>
                             <span class="day">Sunday:</span>
                             <span class="time">10:00 AM - 12:00AM</span>
@@ -191,20 +468,30 @@
                     <p class="special-note">* Extended Working Hours on Holidays *</p>
                 </div>
             </div>
-    
+
             <div class="copyright">
                 <p>© 2024 Twilight Timbers. All Rights Reserved | <a href="">Privacy Policy</a> | <a href="">Terms of
                         Service</a> </p>
             </div>
-    
+
         </div>
     </footer>
 
     <!-- main js file -->
     <script src="js/main.js" defer></script>
+    <script src="js/gallery.js"></script>
 
+    <!-- Lightbox JS -->
+    <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/js/lightbox.min.js"></script>
+    <script>
+        lightbox.option({
+          resizeDuration: 300,
+          fadeDuration: 300,
+          imageFadeDuration: 300,
+          wrapAround: true,
+          disableScrolling: true
+        });
+      </script>
+      
     <!-- Bootstrap js link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Lightbox2 JS -->
-    <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/js/lightbox.min.js"></script>
