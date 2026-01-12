@@ -29,11 +29,13 @@
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
+  line-height: 1.6;
+  color: var(--text-primary);
+  background-color: var(--soft-cream);
 }
 
 /* Headings (Brand / Editorial) */
-h1, h2, h3,
-.main-headings {
+h1, h2, h3 {
   font-family: 'Cormorant Garamond', serif;
   font-weight: 600;
   letter-spacing: 1px;
@@ -41,8 +43,23 @@ h1, h2, h3,
 
 /* Section headings specifically */
 .main-headings {
-  font-size: 2.4rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-align: center;
   text-transform: uppercase;
+  margin-bottom: 20px;
+  color: var(--forest-green);
+}
+
+.main-headings::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  background-color: var(--forest-green);
+  margin: 14px auto 0;
 }
 
 /* Body text */
@@ -52,8 +69,7 @@ p {
   color: var(--text-muted);
 }
 
-/* Buttons & nav */
-.button,
+/* nav */
 .navbar ul li a,
 .top-bar {
   font-family: 'Montserrat', sans-serif;
@@ -69,27 +85,12 @@ p {
   list-style: none;
 }
 
-body {
-  line-height: 1.6;
-  color: var(--text-primary);
-  background-color: var(--soft-cream);
-}
-
 a {
   text-decoration: none !important;
 }
 
 .all-sections {
   margin: 80px 100px;
-}
-
-.main-headings {
-  font-size: 2.5rem;
-  font-weight: 600;
-  text-align: center;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  color: var(--forest-green);
 }
 
 .sub-headings {
@@ -124,15 +125,13 @@ a {
   border-radius: 20px;
   text-decoration: none;
 
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
-
 
 .button:hover {
   background-color: var(--forest-green-light);
   box-shadow: 0 4px 6px var(--soft-shadow);
   transform: translateY(-2px);
-  transition: .5s ease;
 }
 
 /* =================================== TOP BAR ================================= */
@@ -350,6 +349,30 @@ header .logo a span {
 .hero-section-buttons .button:last-child:hover {
   background-color: var(--white);
   color: var(--forest-green);
+}
+
+.editorial-section {
+  text-align: center;
+  padding: 60px 0 40px;
+}
+
+.editorial-text {
+  font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: var(--forest-green);
+    letter-spacing: 0.3px;
+    padding: 0 20px;
+}
+
+.editorial-text::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  background-color: var(--earth-brown);
+  margin: 28px auto 0;
 }
 
 /* =================================== FOOTER ================================= */
