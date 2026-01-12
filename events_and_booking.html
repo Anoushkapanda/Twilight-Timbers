@@ -34,20 +34,24 @@
     <!-- Favicon (Small icon displayed in browser tab) -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
+    <!-- Bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <!-- Link to External Stylesheets (if any) -->
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/events-booking.css">
 
     <!-- fontawesome link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Bootstrap link -->
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Google Fonts (optional, if using a custom font) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Fuzzy+Bubbles:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Qwitcher+Grypen:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
 
     <!-- Lightbox2 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/css/lightbox.min.css" rel="stylesheet">
@@ -71,9 +75,23 @@
 
 <body>
 
+    <!-- TOP INFO BAR -->
+    <div class="top-bar">
+        <div class="top-bar-left">
+            <span><i class="fa-solid fa-leaf quotes-inverted"></i> Seasonal Forest Specials Available</span>
+        </div>
+
+        <div class="top-bar-right">
+            <span>Open: 12 PM – 11 PM</span>
+            <span class="divider">|</span>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+        </div>
+    </div>
+
     <header>
         <div class="logo">
-            <a href="index_home.html">Twilight Timbers</a>
+            <a href="index_home.html">Twilight <span>Timbers</span></a>
         </div>
         <div class="hamburger">
             <span></span>
@@ -105,25 +123,206 @@
     </header>
 
     <main>
-        
-<!-- HERO SECTION -->
 
-<section id="hero">
-    <div class="hero-section">
-        <div class="hero-section-heading">
-            <h1>About Us</h1>
-        </div>
-        <div class="hero-section-description">
-            <p>Discover the story behind Twilight Timbers and our passion for blending nature with flavor.</p>
-        </div>
-        <!-- <div class="hero-section-buttons">
+        <!-- HERO SECTION -->
+
+        <section id="hero">
+            <div class="hero-section">
+                <div class="hero-section-heading">
+                    <h1>Events & Celebrations</h1>
+                </div>
+                <div class="hero-section-description">
+                    <p>Celebrate life’s moments surrounded by nature</p>
+                </div>
+                <!-- <div class="hero-section-buttons">
             <a href="menu.html" class="button">Explore Menu</a>
             <a href="events_and_booking.html" class="button">Reserve a Table</a>
         </div> -->
+            </div>
+
+        </section>
+
+        <!-- PHILOSOPHY / INTRO -->
+        <section id="events-philosophy" class="all-sections editorial-section">
+            <p class="events-philosophy-text editorial-text">
+                From intimate gatherings to grand celebrations,
+                Twilight Timbers crafts unforgettable experiences.
+            </p>
+        </section>
+
+        <!-- UPCOMING EVENTS -->
+        <section id="upcoming-events" class="all-sections">
+            <h2 class="main-headings">Upcoming Events</h2>
+
+            <div class="upcoming-events-list">
+                <!-- Event Card -->
+                <article class="event-card">
+                    <div class="event-info">
+                        <h3>Forest Moon Dinner</h3>
+                        <p>Live acoustic music & seasonal tasting menu</p>
+                        <span class="event-date">24 Jan 2026</span>
+                    </div>
+
+                    <div class="event-timer">
+                        <!-- countdown placeholder -->
+                        <span class="timer">Coming Soon</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- EVENT TYPES / PRIVATE BOOKINGS -->
+        <section id="event-types" class="all-sections">
+            <h2 class="main-headings">Host Your Event With Us</h2>
+
+            <div class="event-types-grid">
+                <div class="event-type">
+                    <h4>Private Dinners</h4>
+                    <p>Curated menus in a serene forest ambiance</p>
+                </div>
+
+                <div class="event-type">
+                    <h4>Corporate Gatherings</h4>
+                    <p>Team dinners, launches, and celebrations</p>
+                </div>
+
+                <div class="event-type">
+                    <h4>Weddings & Milestones</h4>
+                    <p>Celebrate love surrounded by nature</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CALENDAR VIEW (FUTURE-READY) -->
+        <section id="events-calendar" class="all-sections">
+            <h2 class="main-headings">Event Calendar</h2>
+
+            <div class="calendar-container">
+                <div class="calendar-grid">
+                    <div class="calendar-day"><span class="date">21</span></div>
+                    <div class="calendar-day"><span class="date">22</span></div>
+                    <div class="calendar-day"><span class="date">23</span></div>
+
+                    <div class="calendar-day has-event">
+                        <span class="date">24</span>
+                        <span class="event-label">Forest Moon Dinner</span>
+                    </div>
+
+                    <div class="calendar-day"><span class="date">25</span></div>
+                    <div class="calendar-day"><span class="date">26</span></div>
+                    <div class="calendar-day"><span class="date">27</span></div>
+                </div>
+            </div>
+
+            <p class="calendar-subtext">
+                Highlighted dates indicate special events at Twilight Timbers
+            </p>
+        </section>
+
+        <!-- PAST EVENTS GALLERY -->
+        <section id="past-events" class="all-sections">
+            <h2 class="main-headings">Past Celebrations</h2>
+            <p class="section-subtext">
+                Moments shared, memories made, and stories written beneath the forest canopy.
+            </p>
+
+            <div class="past-events-gallery">
+                <a href="images/Midnight Butterfly Fizz, Color-changing cocktail with citrus, elderflower, and effervescence.jfif" data-lightbox="past-events" class="past-event-item">
+                    <img src="images/Midnight Butterfly Fizz, Color-changing cocktail with citrus, elderflower, and effervescence.jfif" alt="Anniversary Dinner">
+                    <span class="event-overlay">Anniversary Dinner</span>
+                </a>
+
+                <a href="images/Midnight Butterfly Fizz, Color-changing cocktail with citrus, elderflower, and effervescence.jfif" data-lightbox="past-events" class="past-event-item tall">
+                    <img src="images/Midnight Butterfly Fizz, Color-changing cocktail with citrus, elderflower, and effervescence.jfif" alt="Private Celebration">
+                    <span class="event-overlay">Private Celebration</span>
+                </a>
+
+                <a href="images/Midnight Butterfly Fizz, Color-changing cocktail with citrus, elderflower, and effervescence.jfif" data-lightbox="past-events" class="past-event-item">
+                    <img src="images/Midnight Butterfly Fizz, Color-changing cocktail with citrus, elderflower, and effervescence.jfif" alt="Forest Gathering">
+                    <span class="event-overlay">Forest Gathering</span>
+                </a>
+
+                <a href="images/Midnight Butterfly Fizz, Color-changing cocktail with citrus, elderflower, and effervescence.jfif" data-lightbox="past-events" class="past-event-item wide">
+                    <img src="images/Midnight Butterfly Fizz, Color-changing cocktail with citrus, elderflower, and effervescence.jfif" alt="Wedding Evening">
+                    <span class="event-overlay">Wedding Evening</span>
+                </a>
+            </div>
+            <div class="past-events-cta">
+                <a href="gallery.html" class="button">View Full Gallery</a>
+            </div>
+        </section>
+
+        <!-- EVENT TESTIMONIALS -->
+<section id="event-testimonials" class="all-sections editorial-section">
+    <h2 class="main-headings">Words From Our Celebrations</h2>
+  
+    <div class="event-testimonial-wrapper">
+  
+      <article class="event-testimonial active">
+        <p class="testimonial-text">
+          “Our anniversary dinner felt magical. The setting, the food, and the attention
+          to detail made it a night we’ll remember forever.”
+        </p>
+        <span class="testimonial-author">— Aanya & Rohan</span>
+      </article>
+  
+      <article class="event-testimonial">
+        <p class="testimonial-text">
+          “Twilight Timbers hosted our corporate retreat flawlessly.
+          Calm, elegant, and incredibly thoughtful.”
+        </p>
+        <span class="testimonial-author">— Kunal Mehta</span>
+      </article>
+  
+      <article class="event-testimonial">
+        <p class="testimonial-text">
+          “From the décor to the custom menu, everything reflected exactly
+          what we envisioned for our celebration.”
+        </p>
+        <span class="testimonial-author">— Neha Kapoor</span>
+      </article>
+  
     </div>
+  </section>
+  
 
-</section>
+        <!-- EVENT CTA -->
+        <section id="event-cta" class="all-sections">
+            <div class="event-cta-content">
+                <h2>Planning Something Special?</h2>
+                <p>
+                    Tell us about your celebration — the vibe, the guests, the occasion —
+                    and let us craft something unforgettable for you.
+                </p>
 
+                <button class="button" id="open-event-modal">
+                    Customize Your Event
+                </button>
+            </div>
+        </section>
+
+        <!-- EVENT CUSTOMIZATION MODAL -->
+        <div id="event-modal" class="event-modal-overlay">
+            <div class="event-modal">
+                <button class="event-modal-close">&times;</button>
+
+                <h3>Tell Us About Your Event</h3>
+                <p class="event-modal-subtext">
+                    Share a few details and we’ll take it from there.
+                </p>
+
+                <form class="event-modal-form">
+                    <input type="text" placeholder="Type of Event (Birthday, Wedding, Corporate)" />
+                    <input type="number" placeholder="Approx. Number of Guests" />
+                    <input type="date" />
+                    <textarea placeholder="Tell us about your vision, preferences, or special requests"></textarea>
+
+                    <button type="submit" class="button">
+                        Send Event Details
+                    </button>
+                </form>
+            </div>
+        </div>
 
     </main>
 
@@ -153,10 +352,10 @@
                         <li><a href="gallery.html">Gallery</a></li>
                         <li><a href="events_and_booking.html">Events and Booking</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
-    
+
                     </ul>
                 </div>
-    
+
                 <div class="footer-contact-section">
                     <h5>Contact Us</h5>
                     <p>
@@ -169,7 +368,7 @@
                         <strong>Address: </strong> 123 Main St, Anytown, USA
                     </p>
                 </div>
-    
+
                 <div class="opening-hours">
                     <h5>Opening Hours</h5>
                     <ul class="opening-hours-list">
@@ -177,12 +376,12 @@
                             <span class="day">Monday to Friday:</span>
                             <span class="time">10:00 AM - 10:00PM</span>
                         </li>
-    
+
                         <li>
                             <span class="day">Saturday:</span>
                             <span class="time">10:00 AM - 11:00PM</span>
                         </li>
-    
+
                         <li>
                             <span class="day">Sunday:</span>
                             <span class="time">10:00 AM - 12:00AM</span>
@@ -191,17 +390,18 @@
                     <p class="special-note">* Extended Working Hours on Holidays *</p>
                 </div>
             </div>
-    
+
             <div class="copyright">
                 <p>© 2024 Twilight Timbers. All Rights Reserved | <a href="">Privacy Policy</a> | <a href="">Terms of
                         Service</a> </p>
             </div>
-    
+
         </div>
     </footer>
 
     <!-- main js file -->
     <script src="js/main.js" defer></script>
+    <script src="js/events.js"></script>
 
     <!-- Bootstrap js link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

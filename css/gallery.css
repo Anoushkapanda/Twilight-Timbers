@@ -3,33 +3,6 @@
     background-image: url("../images/pexels-taryn-elliott-4840134.jpg");
   }
 
-/* =================================== PHILOSOPHY ================================= */
-#gallery-philosophy {
-  padding: 80px 60px 60px;
-  background-color: var(--off-white);
-}
-
-.gallery-philosophy-text {
-  max-width: 900px;
-  margin: 0 auto;
-  text-align: center;
-
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.75rem;
-  line-height: 1.7;
-  letter-spacing: 0.6px;
-  color: var(--text-dark);
-}
-
-.gallery-philosophy-text::after {
-  content: "";
-  display: block;
-  width: 70px;
-  height: 2px;
-  background-color: var(--earth-brown);
-  margin: 24px auto 0;
-}
-
   /* =================================== FILTER ================================= */
 
 #gallery-filter {
